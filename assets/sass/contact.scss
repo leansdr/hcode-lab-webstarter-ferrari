@@ -16,6 +16,14 @@
     > section {
         flex-direction: column;
     }
+    .alert {
+        display: none;
+        background-color: var(--danger);
+        border: 2px solid var(--danger-border);
+        padding: 20px 15px;
+        margin-bottom: 15px;
+        color: var(--danger-color);
+    }
     #map {
         width: 100%;
         height: 263px;
@@ -90,6 +98,7 @@
         }
         textarea {
             height: 245px;
+            resize: none;
         }
     }
 }

@@ -94,6 +94,18 @@
                     }
                 }
             }
+            ul {
+                .social {
+                    a {
+                        img {
+                            &:hover {
+                                color: var(--white);
+                            }
+
+                        }
+                    }
+                }
+            }
         }
     }
 }
