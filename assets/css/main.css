@@ -1550,5 +1550,36 @@ header.page-title hr {
 #auth > section form .actions .link:active {
   color: var(--black);
 }
+#auth > section form .actions button {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--green);
+  color: var(--white);
+}
+#auth > section form .actions button:hover {
+  background-color: var(--black-10);
+}
+#auth > section form .actions button:active {
+  background-color: var(--black-75);
+}
+#auth > section form .actions button:hover {
+  background-color: var(--green-hover);
+}
+#auth > section form .actions button:active {
+  background-color: var(--green-active);
+}
 
 /*# sourceMappingURL=main.css.map */
