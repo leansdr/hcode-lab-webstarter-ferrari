@@ -1392,4 +1392,163 @@ header.page-title hr {
   font-weight: bold;
 }
 
+#edit header {
+  margin: 10px 0;
+}
+#edit main .alert {
+  margin-top: 50px;
+  background-color: var(--sucess);
+  color: var(--sucess-color);
+  padding: 20px 10px;
+  display: none;
+}
+
+#photo .photo-area {
+  width: 100%;
+  height: 100%;
+}
+#photo .photo-area .photo-user {
+  width: 50%;
+  margin: auto;
+}
+#photo .btn-foto {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--green);
+  color: var(--white);
+  margin: auto;
+  width: 256px;
+}
+#photo .btn-foto:hover {
+  background-color: var(--black-10);
+}
+#photo .btn-foto:active {
+  background-color: var(--black-75);
+}
+#photo .btn-foto:hover {
+  background-color: var(--green-hover);
+}
+#photo .btn-foto:active {
+  background-color: var(--green-active);
+}
+#photo .fixed a {
+  display: none;
+}
+
+#change-password main form {
+  max-width: 500px;
+}
+#change-password main form .page-title {
+  margin: 10px 0;
+}
+#change-password main form .page-title h2 {
+  font-size: 32px;
+}
+#change-password main .fixed a {
+  display: none;
+}
+
+#auth {
+  min-width: 300px;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+#auth .hide {
+  display: none;
+}
+#auth > section {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+#auth > section > a {
+  display: contents;
+}
+#auth > section > a img {
+  position: absolute;
+  width: 100px;
+  top: 40px;
+  z-index: 1;
+}
+#auth > section p {
+  color: var(--gray-9);
+  font-size: 1em;
+}
+#auth > section form {
+  margin-top: 170px;
+  position: relative;
+  left: 0;
+  width: 100vw;
+}
+#auth > section form .message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#auth > section form .message img {
+  margin-right: 5px;
+}
+#auth > section form .message span {
+  font-weight: 600;
+  color: var(--dark-0);
+}
+#auth > section form h1 {
+  text-align: center;
+  color: var(--green);
+  font-size: 28px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+#auth > section form hr {
+  border: none;
+  border-top: 4px solid var(--red);
+  width: 68px;
+  margin-bottom: 30px;
+}
+#auth > section form .field {
+  width: 100%;
+}
+#auth > section form .actions {
+  justify-content: space-between;
+}
+#auth > section form .actions > div {
+  flex-direction: column;
+}
+#auth > section form .actions > div a {
+  display: flex;
+}
+#auth > section form .actions .link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--dark-0);
+  text-decoration: none;
+}
+#auth > section form .actions .link + .link {
+  margin-top: 10px;
+}
+#auth > section form .actions .link:hover {
+  color: var(--gray-11);
+}
+#auth > section form .actions .link:active {
+  color: var(--black);
+}
+
 /*# sourceMappingURL=main.css.map */
