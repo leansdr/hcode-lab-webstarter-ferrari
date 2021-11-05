@@ -87,7 +87,36 @@
                 @include button-green
             }
             }
+            &.forget {
+                .actions {
+                    justify-content: flex-end;
+                }
+            }
         }
     }
-    
+}
+
+@media(min-width: 500px) {
+    #auth {
+        height: initial;
+        min-height: 100vh;
+        > section {
+            width: 500px;
+            height: initial;
+            a {
+                img {
+                    top: 25px;
+
+                }
+            }
+            form {
+                border:var(--gray-8) 1px solid;
+                border-radius: 10px;
+                width: 100%;
+                padding: 50px;
+                padding-top: 100px;
+                margin-top: 100px;
+            }
+        }
+    }
 }

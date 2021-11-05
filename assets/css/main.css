@@ -1569,7 +1569,31 @@ header.page-title hr {
 #auth > section form .actions button:active {
   background-color: var(--green-active);
 }
+#auth > section form.forget .actions {
+  justify-content: flex-end;
+}
 
+@media (min-width: 500px) {
+  #auth {
+    height: initial;
+    min-height: 100vh;
+  }
+  #auth > section {
+    width: 500px;
+    height: initial;
+  }
+  #auth > section a img {
+    top: 25px;
+  }
+  #auth > section form {
+    border: var(--gray-8) 1px solid;
+    border-radius: 10px;
+    width: 100%;
+    padding: 50px;
+    padding-top: 100px;
+    margin-top: 100px;
+  }
+}
 #aside-services {
   flex-direction: column;
   background-color: var(--gray-12);

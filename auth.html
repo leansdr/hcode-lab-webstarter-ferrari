@@ -33,7 +33,7 @@
     <main class="page" id="auth">
         <section>
             <a href="index.html"><img src="assets/images/ferrari-logo.svg" alt="Home"></a>
-            <form class="">
+            <form class="hide">
                 <h1>Autenticação</h1>
                 <hr />
                 <div class="field">
@@ -45,8 +45,50 @@
                     <button type="submit">Próxima</button>
                 </div>
             </form>
-            <form class="hide"></form>
-            <form class="hide"></form>
+            <form class="hide">
+                <h1>Fazer Login</h1>
+                <hr />
+                <div class="field">
+                    <input type="email" name="email" id="email-login">
+                    <label for="email-login">E-mail</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" id="password">
+                    <label for="password">Digite sua Senha</label>
+                </div>
+                <div class="actions">
+                    <div>
+                        <a href="auth.html" class="link">Esqueci a senha</a>
+                        <a href="auth.html" class="link">Este não é o seu email</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+            <form class="register">
+                <h1>Criar Conta</h1>
+                <hr />
+
+                <div class="field">
+                    <input type="email" name="email" id="email-register">
+                    <label for="email-register">E-mail</label>
+                </div>
+                
+                <div class="field">
+                    <input type="text" name="name" id="name-register">
+                    <label for="name-register">Nome Completo</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" name="birth_at" id="birth_at">
+                    <label for="birth_at">Data de Nascimento</label>
+                </div>
+
+                <div class="field">
+                    <input type="text" name="birth_at" id="birth_at">
+                    <label for="birth_at">Data de Nascimento</label>
+                </div>
+                
+            </form>
             <form class="hide"></form>
             <form class="hide"></form>
 
