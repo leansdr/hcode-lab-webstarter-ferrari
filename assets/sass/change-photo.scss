@@ -1,0 +1,23 @@
+#change-photo {
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media(min-width:1200px) {
+            align-items: flex-start;
+        }
+        #photo {
+            display: none;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin: var(--space) 0;
+        }
+        .choose-file {
+            @include button-green;
+            min-width: 256px;
+        }
+    }
+}

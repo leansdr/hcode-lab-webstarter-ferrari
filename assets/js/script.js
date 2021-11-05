@@ -10,14 +10,12 @@ btnClose.addEventListener('click', () => {
     closeMenu.classList.remove('open-menu');
 })
 
-var btnSubmit = document.querySelector('#btn-submit');
-btnSubmit.addEventListener('click', ()=> {
-    var alertInfo = document.querySelector('.alert');
-    alertInfo.style.display = 'flex';
-})
 
 const painel = document.querySelector("#aside-services");
 const botao = document.querySelector("#btn-summary-toggle");
 botao.addEventListener('click', () => {
     painel.classList.toggle('open');
 })
+
+
+

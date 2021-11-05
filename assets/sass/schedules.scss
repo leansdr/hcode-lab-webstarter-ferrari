@@ -1,0 +1,55 @@
+#schedules {
+    footer.fixed {
+        justify-content: center;
+        button {
+            min-width: 220px;
+        }
+        @media(min-width: 1200px) {
+            justify-content: flex-start;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        @media (min-width:1200px) {
+            max-width: 1275px;
+        }
+        li {
+            flex-direction: column;
+            padding: 0 var(--space);
+            @media(min-width:1200px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            > section {
+                flex-wrap: wrap;
+                > div {
+                    flex-direction: column;
+                    width: 50%;
+                    font-size: 16px;
+                    color: var(--dark-0);
+                    strong {
+                        font-weight: bold;
+                    }
+                    strong, span {
+                        margin: 10px 0;
+                    }
+                    @media(min-width: 1200px) {
+                        width: 200px;
+                    }
+                }
+            }
+            button {
+                @include button-red;
+                width: 150px;
+                align-self: center;
+            }
+        }
+        li + li {
+            border-top: 1px solid var(--gray-10);
+            margin-top: var(--space);
+            padding-top: calc(var(--space) / 2);
+        }
+    }
+}

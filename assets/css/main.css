@@ -1392,26 +1392,26 @@ header.page-title hr {
   font-weight: bold;
 }
 
-#edit header {
-  margin: 10px 0;
+#change-photo form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-#edit main .alert {
-  margin-top: 50px;
-  background-color: var(--sucess);
-  color: var(--sucess-color);
-  padding: 20px 10px;
+@media (min-width: 1200px) {
+  #change-photo form {
+    align-items: flex-start;
+  }
+}
+#change-photo form #photo {
   display: none;
 }
-
-#photo .photo-area {
-  width: 100%;
-  height: 100%;
+#change-photo form img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: var(--space) 0;
 }
-#photo .photo-area .photo-user {
-  width: 50%;
-  margin: auto;
-}
-#photo .btn-foto {
+#change-photo form .choose-file {
   min-width: 130px;
   border: none;
   height: 50px;
@@ -1429,36 +1429,24 @@ header.page-title hr {
   color: var(--black);
   background-color: var(--green);
   color: var(--white);
-  margin: auto;
-  width: 256px;
+  min-width: 256px;
 }
-#photo .btn-foto:hover {
+#change-photo form .choose-file:hover {
   background-color: var(--black-10);
 }
-#photo .btn-foto:active {
+#change-photo form .choose-file:active {
   background-color: var(--black-75);
 }
-#photo .btn-foto:hover {
+#change-photo form .choose-file:hover {
   background-color: var(--green-hover);
 }
-#photo .btn-foto:active {
+#change-photo form .choose-file:active {
   background-color: var(--green-active);
 }
-#photo .fixed a {
-  display: none;
-}
 
-#change-password main form {
-  max-width: 500px;
-}
-#change-password main form .page-title {
-  margin: 10px 0;
-}
-#change-password main form .page-title h2 {
-  font-size: 32px;
-}
-#change-password main .fixed a {
-  display: none;
+#change-password form .page-title {
+  margin: var(--space) 0;
+  width: 100%;
 }
 
 #auth {
@@ -1674,6 +1662,96 @@ header.page-title hr {
 }
 #aside-services.open footer button svg {
   transform: rotate(180deg);
+}
+
+#schedules footer.fixed {
+  justify-content: center;
+}
+#schedules footer.fixed button {
+  min-width: 220px;
+}
+@media (min-width: 1200px) {
+  #schedules footer.fixed {
+    justify-content: flex-start;
+  }
+}
+#schedules ul {
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  #schedules ul {
+    max-width: 1275px;
+  }
+}
+#schedules ul li {
+  flex-direction: column;
+  padding: 0 var(--space);
+}
+@media (min-width: 1200px) {
+  #schedules ul li {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#schedules ul li > section {
+  flex-wrap: wrap;
+}
+#schedules ul li > section > div {
+  flex-direction: column;
+  width: 50%;
+  font-size: 16px;
+  color: var(--dark-0);
+}
+#schedules ul li > section > div strong {
+  font-weight: bold;
+}
+#schedules ul li > section > div strong, #schedules ul li > section > div span {
+  margin: 10px 0;
+}
+@media (min-width: 1200px) {
+  #schedules ul li > section > div {
+    width: 200px;
+  }
+}
+#schedules ul li button {
+  min-width: 130px;
+  border: none;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  background: transparent;
+  color: var(--black);
+  background-color: var(--red);
+  color: var(--white);
+  width: 150px;
+  align-self: center;
+}
+#schedules ul li button:hover {
+  background-color: var(--black-10);
+}
+#schedules ul li button:active {
+  background-color: var(--black-75);
+}
+#schedules ul li button:hover {
+  background-color: var(--red-hover);
+}
+#schedules ul li button:active {
+  background-color: var(--red-active);
+}
+#schedules ul li + li {
+  border-top: 1px solid var(--gray-10);
+  margin-top: var(--space);
+  padding-top: calc(var(--space) / 2);
 }
 
 /*# sourceMappingURL=main.css.map */
