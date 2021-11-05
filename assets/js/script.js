@@ -16,3 +16,8 @@ btnSubmit.addEventListener('click', ()=> {
     alertInfo.style.display = 'flex';
 })
 
+const painel = document.querySelector("#aside-services");
+const botao = document.querySelector("#btn-summary-toggle");
+botao.addEventListener('click', () => {
+    painel.classList.toggle('open');
+})
